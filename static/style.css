@@ -1,0 +1,270 @@
+:root {
+  --primary: #eef0ff;
+  --secondary: #fff;
+  --tertiary: #220061;
+  --text-color: #000;
+  --text-color-2: #4039a8;
+  --br: 5px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 75%;
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Comfortaa", sans-serif;
+    color: var(--text-color);
+    margin: 0 4rem;
+}
+
+/* NAVIGATION */
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--secondary);
+    padding: 2rem  3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+.logo {
+    font-family: "Comfortaa", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--tertiary);
+}
+.logo__icon {
+    font-size: 3rem;
+}
+.nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+.nav__item {
+    position: relative;
+    color: var(--text-color);
+    text-decoration: none;
+
+}
+.nav__item:hover {
+    color: var(--text-color-2);
+}
+
+/* BUTTON */
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: var(--br);
+    outline: none;
+    border: 1px solid var(--tertiary);
+    cursor: pointer;
+    text-align: center;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: all .2s ease-in-out;
+}
+
+
+.btn:hover {
+    background: var(--tertiary);
+    color: #fff;
+}
+.btn--dark {
+    background: var(--tertiary);
+    color: #fff;
+}
+
+.btn--dark:hover {
+    background: transparent;
+    color: var(--text-color);
+}
+
+
+/* HEADER */
+
+.header {
+    padding: 8rem 4rem;
+    background: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var(--br);
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    flex-basis: 60%;
+}
+
+.heading {
+    font-size: 7rem;
+}
+
+.sub-heading {
+    font-size: 2rem;
+    max-width: 60%;
+}
+
+.header__img {
+    flex-basis: 40%;
+}
+
+.header__cta {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+}
+
+.header__cta > .btn:has(i) {
+    color: var(--text-color-2);
+    font-weight: 900;
+    border: none;
+}
+.header__cta > .btn:has(i):hover {
+
+    color: var(--primary);
+}
+
+.header__cta > .btn > i {
+    margin-left: 1rem;
+
+}
+
+
+/* FEATURES */
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 8rem;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.feature__number {
+   font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.feature__text {
+
+    font-size: 1.25rem;
+}
+
+/* APP */
+
+.app {
+    padding: 8rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+}
+
+
+
+.versions {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.versions__heading {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.form {
+
+    padding: 0 20vw;
+    display: flex;
+    column-gap: 3rem;
+    row-gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form__heading {
+    font-size: 2rem;
+    color: var(--text-color-2);
+
+}
+
+.form__group {
+
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: .5rem;
+
+}
+
+.full-width {
+
+    flex-basis: 100%;
+}
+
+.form__input {
+    font-family: "Comfortaa", sans-serif;
+    padding: 1rem 2rem;
+    border-radius: var(--br);
+    outline: none;
+    border: 1px solid rgba(200, 200, 200, 0.5);
+    box-shadow: 0px 5px 10px rgba(150, 150, 150, .1);
+    transition: all .2s ease-in-out;
+}
+.form__input:focus {
+    border-color: rgba(150, 150, 150, .8);
+    box-shadow: 0px 5px 20px rgba(150, 150, 150, .3);
+
+}
+
+.form-heading {
+
+    color: var(--text-color-2);
+}
+
+.form__sub-heading {
+    font-size: 2.25rem;
+    color: var(--text-color-2);
+}
+
+.form__label {
+    cursor: pointer;
+    color: var(--text-color-2);
+    font-size: 1.1rem;
+
+}
+
+
+

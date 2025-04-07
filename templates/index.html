@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+  <!--  GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/style.css">
+
+
+  <!--  FONT AWESOME-->
+  <script src="https://kit.fontawesome.com/3a1c20dcea.js" crossorigin="anonymous"></script>
+
+    <title>Health Care Project_DEPI</title>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="logo">
+      <i class="fa-brands fa-uncharted logo__icon"></i>
+      CoviSense
+    </div>
+    <div class="nav__list">
+      <a href="#" class="nav__item ">Home</a>
+      <a href="#" class="nav__item ">About</a>
+      <a href="#" class="nav__item ">Docs</a>
+    </div>
+    <div class="nav__list">
+      <a class="nav__item btn">Login</a>
+      <a class="nav__item btn btn--dark">Join</a>
+    </div>
+  </nav>
+
+
+  <header class="header">
+
+    <div class="header__content">
+
+      <h1 class="heading">Covid-19 Prediction Model</h1>
+      <p class="sub-heading">Advanced AI-powered prediction system for COVID-19 spread analysis. Get accurate forecasts based on real-time data and machine learning algorithms.</p>
+
+      <div class="header__cta">
+        <a href="#app" class="btn btn--dark">Get Started</a>
+        <a href="#" class="btn">Read Docs<i class="fa-solid fa-arrow-right-long"></i></a>
+      </div>
+
+    </div>
+
+
+    <img class="header__img" src="static/images/header-bg.png" alt="Heading Background Image">
+
+  </header>
+
+
+  <main>
+    <section class="features">
+      <div class="feature">
+        <h1 class="feature__number">200K+</h1>
+        <p class="feature__text">Data Records across multiple regions</p>
+      </div>
+      <div class="feature">
+        <h1 class="feature__number">94%</h1>
+        <p class="feature__text">Overall accuracy</p>
+      </div>
+      <div class="feature">
+        <h1 class="feature__number">50+</h1>
+        <p class="feature__text">countries</p>
+      </div>
+      <div class="feature">
+        <h1 class="feature__number">19</h1>
+        <p class="feature__text">Features ( Asthma & Pneumonia )</p>
+      </div>
+    </section>
+
+
+    <section id="app" class="app">
+
+
+      <div class="versions">
+      <h1 class="versions__heading full-width">Select Your Version <i class="fa-solid fa-code-compare"></i></h1>
+        <a href="#" class="version btn btn--dark">Version 1</a>
+        <a href="#" class="version btn">Version 2</a>
+        <a href="#" class="version btn">Version 3</a>
+        <a href="#" class="version btn">Version 4</a>
+      </div>
+
+
+    <form class="form">
+
+      <h1 class="form__heading">Enter Your Parameters</h1>
+
+      <h1 class="form__sub-heading full-width">Basic Info</h1>
+
+  <div class="form__group">
+    <label class="form__label" for="usmer">USMER</label>
+    <select id="usmer" class="form__input">
+      <option value="1">Yes</option>
+      <option value="2">No</option>
+    </select>
+  </div>
+
+  <div class="form__group">
+    <label class="form__label" for="medical_unit">Medical Unit</label>
+    <input type="number" id="medical_unit" class="form__input" min="1">
+  </div>
+
+  <div class="form__group">
+    <label class="form__label" for="sex">Sex</label>
+    <select id="sex" class="form__input">
+      <option value="1">Female</option>
+      <option value="2">Male</option>
+    </select>
+  </div>
+
+  <div class="form__group">
+    <label class="form__label" for="patient_type">Patient Type</label>
+    <select id="patient_type" class="form__input">
+      <option value="1">Returned Home</option>
+      <option value="2">Hospitalized</option>
+    </select>
+  </div>
+
+  <div class="form__group">
+    <label class="form__label" for="date_died">Date of Death</label>
+    <input type="date" id="date_died" class="form__input">
+  </div>
+
+
+  <h1 class="form__sub-heading full-width">Medical Info</h1>
+
+
+  <div class="form__group">
+    <label class="form__label" for="intubed">Intubed</label>
+    <select id="intubed" class="form__input">
+      <option value="1">Yes</option>
+      <option value="2">No</option>
+      <option value="97">N/A</option>
+    </select>
+  </div>
+
+  <div class="form__group">
+    <label class="form__label" for="pneumonia">Pneumonia</label>
+    <select id="pneumonia" class="form__input">
+      <option value="1">Yes</option>
+      <option value="2">No</option>
+      <option value="97">N/A</option>
+    </select>
+  </div>
+
+  <div class="form__group">
+    <label class="form__label" for="age">Age</label>
+    <input type="number" id="age" class="form__input" min="0">
+  </div>
+
+  <div class="form__group">
+    <label class="form__label" for="pregnant">Pregnant</label>
+    <select id="pregnant" class="form__input">
+      <option value="1">Yes</option>
+      <option value="2">No</option>
+      <option value="97">N/A</option>
+    </select>
+  </div>
+
+  <div class="form__group">
+    <label class="form__label" for="diabetes">Diabetes</label>
+    <select id="diabetes" class="form__input">
+      <option value="1">Yes</option>
+      <option value="2">No</option>
+      <option value="97">Unknown</option>
+    </select>
+  </div>
+
+  <div class="form__group">
+    <label class="form__label" for="copd">COPD</label>
+    <select id="copd" class="form__input">
+      <option value="1">Yes</option>
+      <option value="2">No</option>
+      <option value="97">Unknown</option>
+    </select>
+  </div>
+
+  <div class="form__group">
+    <label class="form__label" for="asthma">Asthma</label>
+    <select id="asthma" class="form__input">
+      <option value="1">Yes</option>
+      <option value="2">No</option>
+      <option value="97">Unknown</option>
+    </select>
+  </div>
+
+  <div class="form__group">
+    <label class="form__label" for="inmsupr">Immunosuppressed</label>
+    <select id="inmsupr" class="form__input">
+      <option value="1">Yes</option>
+      <option value="2">No</option>
+      <option value="97">Unknown</option>
+    </select>
+  </div>
+
+  <div class="form__group">
+    <label class="form__label" for="hypertension">Hypertension</label>
+    <select id="hypertension" class="form__input">
+      <option value="1">Yes</option>
+      <option value="2">No</option>
+      <option value="97">Unknown</option>
+    </select>
+  </div>
+
+  <div class="form__group">
+    <label class="form__label" for="other_disease">Other Disease</label>
+    <select id="other_disease" class="form__input">
+      <option value="1">Yes</option>
+      <option value="2">No</option>
+    </select>
+  </div>
+
+  <div class="form__group">
+    <label class="form__label" for="cardio">Cardiovascular</label>
+    <select id="cardio" class="form__input">
+      <option value="1">Yes</option>
+      <option value="2">No</option>
+      <option value="97">Unknown</option>
+    </select>
+  </div>
+
+  <div class="form__group">
+    <label class="form__label" for="obesity">Obesity</label>
+    <select id="obesity" class="form__input">
+      <option value="1">Yes</option>
+      <option value="2">No</option>
+      <option value="97">Unknown</option>
+    </select>
+  </div>
+
+  <div class="form__group">
+    <label class="form__label" for="renal">Chronic Renal</label>
+    <select id="renal" class="form__input">
+      <option value="1">Yes</option>
+      <option value="2">No</option>
+      <option value="97">Unknown</option>
+    </select>
+  </div>
+
+  <div class="form__group">
+    <label class="form__label" for="tobacco">Tobacco Use</label>
+    <select id="tobacco" class="form__input">
+      <option value="1">Yes</option>
+      <option value="2">No</option>
+      <option value="97">Unknown</option>
+    </select>
+  </div>
+
+  <div class="form__group">
+    <label class="form__label" for="classification">Classification</label>
+    <select id="classification" class="form__input">
+      <option value="1">Confirmed by Test</option>
+      <option value="2">Confirmed by Association</option>
+      <option value="3">Suspected</option>
+    </select>
+  </div>
+
+  <div class="form__group">
+    <label class="form__label" for="icu">ICU</label>
+    <select id="icu" class="form__input">
+      <option value="1">Yes</option>
+      <option value="2">No</option>
+      <option value="97">N/A</option>
+    </select>
+  </div>
+
+  <div class="form__group full-width">
+    <button class="btn btn--dark" type="submit">Predict</button>
+  </div>
+</form>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 DEPI. All rights reserved.</p>
+  </footer>
+
+
+</body>
+</html>
