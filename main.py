@@ -8,12 +8,13 @@ def home():
     return render_template("index.html")
 
 
-@app.route("/detect", methods=["POST"])
-def detect():
+@app.route("/predict", methods=["POST"])
+def predict():
     if request.method == "POST":
 
-        data = request.body[""]
-        return {"detections" : 'data'}
+        data = request.form.to_dict()
+        print(data)
+        return data
 
 
 
