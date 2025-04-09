@@ -1,8 +1,8 @@
 :root {
   --primary: #eef0ff;
-  --secondary: #fff;
+  --secondary: #ffffff;
   --tertiary: #220061;
-  --text-color: #000;
+  --text-color: #000000;
   --text-color-2: #4039a8;
   --br: 5px;
 }
@@ -12,10 +12,41 @@
   box-sizing: border-box;
 }
 
+/* Large screens (1200px) */
+/* Default font-size (1rem = 10px) */
 html {
-  font-size: 75%;
-  scroll-behavior: smooth;
+  font-size: 62.5%; /* 16px * 62.5% = 10px */
 }
+
+/* Medium screens (up to 1200px or 75em) */
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%; /* 16px * 56.25% = 9px */
+  }
+}
+
+/* Small screens (up to 900px or 56.25em) */
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%; /* 16px * 50% = 8px */
+  }
+}
+
+/* Larger screens (greater than 1200px or 75em) */
+@media only screen and (min-width: 75em) {
+  html {
+    font-size: 68.75%; /* 16px * 68.75% = 11px */
+  }
+}
+
+/* Very large screens (greater than 1800px or 112.5em) */
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%; /* 16px * 75% = 12px */
+  }
+}
+
+
 
 body {
     font-family: "Comfortaa", sans-serif;
@@ -54,6 +85,13 @@ body {
 
 }
 
+@media only screen and (max-width: 37.5em) {
+  .nav__list-2 {
+    display: none;
+  }
+}
+
+
 .nav__item {
     position: relative;
     color: var(--text-color);
@@ -75,18 +113,18 @@ body {
     text-align: center;
     color: var(--text-color);
     text-decoration: none;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     transition: all .2s ease-in-out;
 }
 
 
 .btn:hover {
     background: var(--tertiary);
-    color: #fff;
+    color: var(--secondary);
 }
 .btn--dark {
     background: var(--tertiary);
-    color: #fff;
+    color: var(--secondary);
 }
 
 .btn--dark:hover {
@@ -117,7 +155,7 @@ body {
 }
 
 .sub-heading {
-    font-size: 2rem;
+    font-size: 2.25rem;
     max-width: 60%;
 }
 
@@ -149,8 +187,17 @@ body {
 .features {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     padding: 4rem 8rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .features {
+    padding: 4rem;
+    justify-content: center;
+    gap: 5rem;
+  }
 }
 
 .feature {
@@ -193,12 +240,12 @@ body {
 
 .versions__heading {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.25rem;
 }
 
 .form {
 
-    padding: 0 20vw;
+    padding: 0 10rem;
     display: flex;
     column-gap: 3rem;
     row-gap: 2rem;
@@ -207,9 +254,16 @@ body {
     align-items: center;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .form {
+    padding: 0;
+  }
+}
+
+
 
 .form__heading {
-    font-size: 2rem;
+    font-size: 2.25rem;
     color: var(--text-color-2);
 
 }
@@ -257,7 +311,7 @@ body {
 .form__label {
     cursor: pointer;
     color: var(--text-color-2);
-    font-size: 1.1rem;
+    font-size: 1.25rem;
 
 }
 
