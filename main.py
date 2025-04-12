@@ -12,6 +12,7 @@ def home():
 def predict():
     if request.method == "POST":
 
+
         data = request.form.to_dict()
         print(data)
         return data
