@@ -6,6 +6,9 @@ An AI-powered web application that predicts COVID-19 diagnosis outcomes based on
 
 This project is an intelligent prediction system for COVID-19 using advanced machine learning models. The system receives patient health information and outputs a predicted classification (e.g., Confirmed, Suspected). The application provides **four different prediction models (versions)** to compare performance and results.
 
+## 🔗 Demo Link 
+ https://funny-literate-chalk.glitch.me/
+
 ---
 
 ## 🛠️ Tech Stack
