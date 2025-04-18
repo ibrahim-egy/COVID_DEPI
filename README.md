@@ -42,7 +42,7 @@ This project is an intelligent prediction system for COVID-19 using advanced mac
 
 ## 🖼️ UI Snapshot
 
-![screenshot](static/images/demo.gif)
+![screenshot](src/static/images/demo.gif)
 
 ---
 

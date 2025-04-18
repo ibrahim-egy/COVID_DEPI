@@ -1,8 +1,7 @@
 const versions = document.querySelector(".versions")
 const allVersions = document.querySelectorAll(".version")
 const allLabels = document.querySelectorAll(".form__label")
-let hiddenFormGroup = document.querySelector(".form__group.hide");
-hiddenFormGroup.querySelector("select").value = null;
+let hiddenFormGroup = document.querySelector(".form__group");
 
 const selectVersion = (e) => {
 
