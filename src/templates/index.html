@@ -76,12 +76,15 @@
 			<h1 class="versions__heading full-width">Select Your Version <i class="fa-solid fa-code-compare"></i></h1>
 			<a href="#" class="version btn btn--dark">Intubed</a>
 			<a href="#" class="version btn">Patient Type</a>
-			<a href="#" class="version btn">Died</a>
+			<a href="#" class="version btn">Dead</a>
 			<a href="#" class="version btn">ICU</a>
 			<a href="#" class="version btn">USMER</a>
 		</div>
 
 		<form class="form" method="post" action="{{url_for('predict')}}">
+
+			<input class="model-version" type="hidden" name="model" value="intubed">
+
 			<h1 class="form__heading">Enter Your Parameters</h1>
 			<h1 class="form__sub-heading full-width">Basic Info</h1>
 
@@ -104,7 +107,7 @@
 
 			<div class="form__group">
 				<label class="form__label" for="age">Age</label>
-				<input type="number" id="age" name="age" class="form__input" min="0" max="150" value="3">
+				<input type="number" id="age" name="age" class="form__input" min="0" max="200" value="3">
 			</div>
 
 			<div class="form__group target">
@@ -246,8 +249,8 @@
 			</div>
 
 			<div class="form__group target">
-				<label class="form__label" for="died">Died</label>
-				<select id="died" name="died" class="form__input">
+				<label class="form__label" for="dead">Dead</label>
+				<select id="dead" name="dead" class="form__input">
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
 					<option value="Unknown">Unknown</option>
