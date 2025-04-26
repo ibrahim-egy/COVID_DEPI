@@ -78,7 +78,6 @@
 			<a href="#" class="version btn">Patient Type</a>
 			<a href="#" class="version btn">Dead</a>
 			<a href="#" class="version btn">ICU</a>
-			<a href="#" class="version btn">USMER</a>
 		</div>
 
 		<form class="form" method="post" action="{{url_for('predict')}}">
@@ -114,7 +113,7 @@
 				<label class="form__label" for="patient_type">Patient Type</label>
 				<select id="patient_type" name="patient_type" class="form__input">
 					<option value="Home">Returned Home</option>
-					<option value="Hospital">Hospitalized</option>
+					<option value="Hospitalized">Hospitalized</option>
 				</select>
 			</div>
 
@@ -125,7 +124,7 @@
 				<select id="intubed" name="intubed" class="form__input">
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
-					<option value="Unknown">Unknown</option>
+					
 				</select>
 			</div>-->
 
@@ -134,7 +133,7 @@
 				<select id="pneumonia" name="pneumonia" class="form__input">
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
-					<option value="Unknown">Unknown</option>
+					
 				</select>
 			</div>
 
@@ -145,7 +144,7 @@
 				<select id="pregnant" name="pregnant" class="form__input">
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
-					<option value="Unknown">Unknown</option>
+					
 				</select>
 			</div>-->
 
@@ -154,7 +153,7 @@
 				<select id="diabetes" name="diabetes" class="form__input">
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
-					<option value="Unknown">Unknown</option>
+					
 				</select>
 			</div>
 
@@ -163,7 +162,7 @@
 				<select id="copd" name="copd" class="form__input">
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
-					<option value="Unknown">Unknown</option>
+					
 				</select>
 			</div>
 
@@ -172,7 +171,7 @@
 				<select id="asthma" name="asthma" class="form__input">
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
-					<option value="Unknown">Unknown</option>
+					
 				</select>
 			</div>
 
@@ -181,16 +180,16 @@
 				<select id="inmsupr" name="inmsupr" class="form__input">
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
-					<option value="Unknown">Unknown</option>
+					
 				</select>
 			</div>
 
 			<div class="form__group">
 				<label class="form__label" for="hypertension">Hypertension</label>
-				<select id="hypertension" name="hypertension" class="form__input">
+				<select id="hypertension" name="hipertension" class="form__input">
 					<<option value="Yes">Yes</option>
 					<option value="No">No</option>
-					<option value="Unknown">Unknown</option>
+					
 				</select>
 			</div>
 
@@ -199,7 +198,7 @@
 				<select id="cardiovascular" name="cardiovascular" class="form__input">
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
-					<option value="Unknown">Unknown</option>
+					
 				</select>
 			</div>
 
@@ -208,7 +207,7 @@
 				<select id="obesity" name="obesity" class="form__input">
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
-					<option value="Unknown">Unknown</option>
+					
 				</select>
 			</div>
 
@@ -217,7 +216,7 @@
 				<select id="renal-chronic" name="renal_chronic" class="form__input">
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
-					<option value="Unknown">Unknown</option>
+					
 				</select>
 			</div>
 
@@ -226,7 +225,7 @@
 				<select id="tobacco" name="tobacco" class="form__input">
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
-					<option value="Unknown">Unknown</option>
+					
 				</select>
 			</div>
 
@@ -235,7 +234,7 @@
 				<select id="icu" name="icu" class="form__input">
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
-					<option value="Unknown">Unknown</option>
+					
 				</select>
 			</div>-->
 
@@ -244,18 +243,18 @@
 				<select id="other-disease" name="other_disease" class="form__input">
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
-					<option value="Unknown">Unknown</option>
+					
 				</select>
 			</div>
 
-			<div class="form__group target">
-				<label class="form__label" for="dead">Dead</label>
-				<select id="dead" name="dead" class="form__input">
-					<option value="Yes">Yes</option>
-					<option value="No">No</option>
-					<option value="Unknown">Unknown</option>
-				</select>
-			</div>
+<!--			<div class="form__group target">-->
+<!--				<label class="form__label" for="dead">Dead</label>-->
+<!--				<select id="dead" name="dead" class="form__input">-->
+<!--					<option value="Yes">Yes</option>-->
+<!--					<option value="No">No</option>-->
+<!--					-->
+<!--				</select>-->
+<!--			</div>-->
 
 			<div class="form__group">
 				<label class="form__label" for="covid-status">Covid Status</label>
@@ -263,6 +262,15 @@
 					<option value="COVID_Positive">Positive</option>
 					<option value="COVID_Negative">Negative</option>
 				</select>
+			</div>
+
+			<div class="result_wrapper hide">
+				<div class="result">
+					<div class="close"><i class="fa-solid fa-xmark"></i></div>
+					<span class="model output"></span>
+					<span class="class output"></span>
+					<span class="probability output"></span>
+				</div>
 			</div>
 
 			<div class="form__group full-width">

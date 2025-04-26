@@ -18,7 +18,7 @@ def predict():
     if request.method == "POST":
 
 
-        data = request.form.to_dict()
+        data = request.get_json()
         model = data['model']
         del data['model']
 
