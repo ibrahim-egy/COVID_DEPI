@@ -9,7 +9,7 @@ This project is an intelligent prediction system for COVID-19 using advanced mac
 ---
 
 ## 🔗 Demo Link 
- ### https://funny-literate-chalk.glitch.me/
+ ### https://night-wind-sunshine.glitch.me/
 
 ---
 
