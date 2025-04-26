@@ -4,10 +4,21 @@ An AI-powered web application that predicts COVID-19 diagnosis outcomes based on
 
 ## 🚀 Overview
 
-This project is an intelligent prediction system for COVID-19 using advanced machine learning models. The system receives patient health information and outputs a predicted classification (e.g., Confirmed, Suspected). The application provides **four different prediction models (versions)** to compare performance and results.
+This project is an intelligent prediction system for COVID-19 using advanced machine learning models. The system receives patient health information and outputs a predicted classification (e.g., Confirmed, Suspected). The application provides **FIVE different prediction models (versions)** to compare performance and results.
+
+---
 
 ## 🔗 Demo Link 
- https://funny-literate-chalk.glitch.me/
+ ### https://funny-literate-chalk.glitch.me/
+
+---
+
+## 🎯 Targets
+- **ICU**
+- **Intubed**
+- **Dead**
+- **USMER**
+- **Patient Type**
 
 ---
 
@@ -15,7 +26,7 @@ This project is an intelligent prediction system for COVID-19 using advanced mac
 
 ### 🧩 Backend
 - **Flask** — Lightweight Python web framework
-- **Machine Learning Models** — Trained COVID-19 classifiers (4 versions)
+- **Machine Learning Models** — Trained COVID-19 classifiers
 
 ### 🎨 Frontend
 - **HTML5**
@@ -27,7 +38,7 @@ This project is an intelligent prediction system for COVID-19 using advanced mac
 ## 📦 Features
 
 - ✅ User-friendly interface to input health data
-- ✅ 4 different model versions for experimentation
+- ✅ 5 different model versions for experimentation
 - ✅ Real-time prediction on form submission
 - ✅ Clean and responsive UI
 - ✅ Deployed using Flask backend
@@ -37,7 +48,7 @@ This project is an intelligent prediction system for COVID-19 using advanced mac
 ## 📋 How It Works
 
 1. User selects a version of the model.
-2. Enters input features like age, sex, symptoms, comorbidities, etc.
+2. Enters input features like age, sex, symptoms, etc.
 3. Submits the form.
 4. Flask backend receives data and returns a prediction from the selected model.
 
@@ -65,3 +76,6 @@ pip install -r requirements.txt
 
 # Run the app
 python main.py
+```
+
+---
