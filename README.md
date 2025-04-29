@@ -1,81 +1,82 @@
 # 🧠 COVID-19 Prediction Model — DEPI Project
 
-An AI-powered web application that predicts COVID-19 diagnosis outcomes based on medical and demographic inputs.
-
-## 🚀 Overview
-
-This project is an intelligent prediction system for COVID-19 using advanced machine learning models. The system receives patient health information and outputs a predicted classification (e.g., Confirmed, Suspected). The application provides **FIVE different prediction models (versions)** to compare performance and results.
+An AI-powered web application that predicts COVID-19 outcomes using demographic and clinical data. Built with Flask and JavaScript, the system offers **five different machine learning models** for comparative analysis, all integrated via **Hugging Face inference APIs**.
 
 ---
 
-## 🔗 Demo Link 
- ### https://night-wind-sunshine.glitch.me/
+## 🌐 Live Demo
+
+🔗 [View the Web App on Glitch](https://night-wind-sunshine.glitch.me/)
 
 ---
 
-## 🎯 Targets
-- **ICU**
-- **Intubed**
-- **Dead**
-- **USMER**
+## 🎯 Prediction Targets (Models)
+
+The application can predict the following outcomes:
+
+- **ICU Admission**
+- **Intubation**
+- **Mortality (Dead)**
 - **Patient Type**
 
 ---
 
 ## 🛠️ Tech Stack
 
-### 🧩 Backend
-- **Flask** — Lightweight Python web framework
-- **Machine Learning Models** — Trained COVID-19 classifiers
+### Backend
+- **Flask** – Lightweight Python web framework
+- **Hugging Face Inference API** – Deployed models used for prediction  
+  📍 Endpoint: `https://jojoTH-covid.hf.space/predict`
 
-### 🎨 Frontend
+### Frontend
 - **HTML5**
 - **CSS3**
 - **JavaScript**
 
 ---
 
-## 📦 Features
+## 🚀 Features
 
-- ✅ User-friendly interface to input health data
-- ✅ 5 different model versions for experimentation
-- ✅ Real-time prediction on form submission
-- ✅ Clean and responsive UI
-- ✅ Deployed using Flask backend
-
----
-
-## 📋 How It Works
-
-1. User selects a version of the model.
-2. Enters input features like age, sex, symptoms, etc.
-3. Submits the form.
-4. Flask backend receives data and returns a prediction from the selected model.
+- 🔘 Intuitive form for entering patient data
+- 🔁 Selection of one of four prediction models
+- 📡 Real-time predictions using Hugging Face APIs
+- 📊 Displays prediction result with clear labels
+- ✅ Fully responsive and mobile-friendly interface
+- ☁️ Deployed with Glitch (Frontend + Backend)
 
 ---
 
-## 🖼️ UI Snapshot
+## 🧪 How It Works
 
-![screenshot](src/static/images/demo.gif)
+1. User selects one of the available prediction models.
+2. Inputs relevant data (e.g., age, sex, symptoms, pre-existing conditions).
+3. On form submission, the data is sent to the Flask backend.
+4. Flask relays the data to the Hugging Face model endpoint.
+5. The response (predicted outcome) is displayed to the user in real time.
 
 ---
 
-## 🔧 Installation
+## 🖼️ UI Preview
+
+![Web App Screenshot](src/static/images/demo.gif)
+
+---
+
+## ⚙️ Local Installation
+
+To run the project locally:
 
 ```bash
-# Clone the repo
+# Clone the repository
 git clone https://github.com/ibrahim-egy/COVID_DEPI.git
 cd COVID_DEPI
 
-# Create virtual environment (optional)
+# (Optional) Create and activate a virtual environment
 python -m venv venv
-source venv/bin/activate  # on Windows: venv\Scripts\activate
+source venv/bin/activate  # For Windows: venv\Scripts\activate
 
-# Install dependencies
+# Install Python dependencies
 pip install -r requirements.txt
 
-# Run the app
+# Start the Flask application
 python main.py
-```
-
----
