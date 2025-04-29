@@ -32,7 +32,7 @@ def predict():
             response = requests.post(API_URL, json=payload)
             response.raise_for_status()
 
-            return {"Model": data['model'], "Prediction": response.json()["prediction"], "Probability (per class)": response.json()["probabilities"]}
+            return {"Model": data['model'], "Prediction": response.json()["prediction"], "Probability": response.json()["probabilities"]}
 
 
         except requests.exceptions.RequestException as e:

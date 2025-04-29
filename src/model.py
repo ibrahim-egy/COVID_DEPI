@@ -111,6 +111,7 @@ class Model:
             else:
                 prediction = "No"
 
-        proba_percentages = [str(round(float(prob) * 100, 2)) + "%" for prob in prediction_proba]
+        proba_percentage = str(round(max(prediction_proba) * 100, 2)) + "%"
 
-        return prediction, proba_percentages
+
+        return prediction, proba_percentage
